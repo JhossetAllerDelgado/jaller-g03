@@ -16,9 +16,14 @@ def mesureTime(func):
     return calculator
 
 @mesureTime
-def suma(a, b):
+def suma(a, b, c, d):
     time.sleep(1)
-    resultado = a + b
-    return resultado
+    return a + b + c + d
+
+@mesureTime
+def resta(x, y):
+    time.sleep(1)
+    return x - y
 
 print(suma(90, 500, 600, 1000))
+print(resta(90,500))

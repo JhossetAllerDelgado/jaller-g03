@@ -1,16 +1,16 @@
 """Decoradores en Python"""
 
 """Creacion de una funcion decoradora"""
+
 def funcionA(funcionB):
 
     def funcionC(*args, **kwargs):
-        print("Antes de ejecutar la funcion que para por parametro")
+        print("Antes de ejecutar la función que para por parámetro")
         resultado = funcionB(*args, **kwargs)
-        print("Despues de ejecutar la funcion decoradora")
         print(resultado)
+        print("Después de ejecutar la función decorada")
 
-    return funcionC()
-
+    return funcionC
 
 
 @funcionA
@@ -18,7 +18,8 @@ def suma(a, b, c, d):
     total = a + b + c + d
     return total
 
-print(suma(30, 40, 100, 200))
+
+suma(30, 40, 100, 200)
 
 
-
+# print(suma(30, 40, 100, 200))
