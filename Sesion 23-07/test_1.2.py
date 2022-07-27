@@ -10,6 +10,7 @@ def funcionA(funcionB):
         print(resultado)
         print("Después de ejecutar la función decorada")
 
+
     return funcionC
 
 
